@@ -1,0 +1,15 @@
+implement CountedSequence<Number>
+
+has Begin Number
+has End Number
+
+factory(begin Number, to: end Number)
+  if begin > end
+    return new(end, begin)
+  return new(begin, end)
+
+method Iterate() returns Iteration
+  return rangeIteration(this)
+
+method Count() returns Boolean
+  return End - Begin

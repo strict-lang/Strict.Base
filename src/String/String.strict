@@ -1,0 +1,9 @@
+implement Sequence<Character>
+
+has characters Character[]
+
+factory From(number Number)
+  return parseNumber(number) 
+
+method Iterate() returns Iteration<Character>
+  return Slice.Iteration(characters)

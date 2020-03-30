@@ -1,0 +1,17 @@
+// Intrinsicly implemented trait
+
+method Plus(target Number) returns Number
+
+method Minus(target Number) returns Number 
+
+method DividedBy(target Number) returns Number
+
+method MultipliedBy(target Number) returns Number 
+
+method IsGreaterThan(target Number) returns Boolean
+
+method IsGreaterOrEqualTo(target Number) returns Boolean
+
+method IsSmallerThan(target Number) returns Boolean
+
+method IsSmallerThanOrequalTo(target Number) returns Boolean

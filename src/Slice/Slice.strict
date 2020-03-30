@@ -1,0 +1,5 @@
+implement CountedSequence<let Element = generic>
+
+method Index(index Number) returns Element
+
+method IsInBounds(index Number) returns Boolean

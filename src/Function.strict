@@ -1,0 +1,3 @@
+let [Input, Output] = generic
+
+method Apply(input Input) returns Output

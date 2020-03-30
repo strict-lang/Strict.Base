@@ -1,0 +1,3 @@
+implement Sequence<let Element = generic>
+
+method Count() returns Number

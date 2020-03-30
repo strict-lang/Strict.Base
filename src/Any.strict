@@ -1,0 +1,2 @@
+method ComputeHashCode() returns Number
+method IsEqualTo(target Any) returns Boolean

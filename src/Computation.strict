@@ -1,0 +1,3 @@
+let Result = generic
+
+method Compute() returns Result
