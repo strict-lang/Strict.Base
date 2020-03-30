@@ -1,0 +1,15 @@
+implement Iteration<let Element = generic>
+
+has elements Element[]
+has index Count
+
+factory(elements Element[])
+  return new(elements, index: Count(0))
+
+method IsDone() returns Boolean
+  return elements.IsInBounds(index)
+
+method Advance() returns Element
+  let element = elements[index]
+  index++
+  return element

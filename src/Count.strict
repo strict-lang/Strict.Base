@@ -1,0 +1,5 @@
+implement Mutable
+implement Number
+
+method Increase()
+method Decrease()

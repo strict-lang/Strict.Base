@@ -1,0 +1,27 @@
+implement Mutable
+
+has buffer Character[]
+has index Count
+
+method Complete() returns String
+  return String.Of(buffer)
+
+method Append(character Character)
+  ensureCapacity(index + 1)
+  buffer[index] = character
+  index++
+
+method AppendString(value String)
+  ensureCapacity(index + value.Count())
+  buffer.InsertSlice(index, value.ListCharacters())
+  index += value.Count()
+
+method ensureCapacity(capacity Number)
+  if not buffer.IsInBounds(capacity)
+    increaseCapacity(capacity)
+
+method increaseCapacity(capacity Number)
+  buffer = buffer.CopyWithCapacity(capacity)
+
+method Copy() returns Builder
+  return new(buffer: buffer.Copy(), index: index.Copy())

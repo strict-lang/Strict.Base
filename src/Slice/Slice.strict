@@ -1,5 +1,12 @@
 implement CountedSequence<let Element = generic>
 
+factory Create(capacity Number)
+
 method Index(index Number) returns Element
 
 method IsInBounds(index Number) returns Boolean
+
+method Iterate() returns Iteration<Element>
+  return iteration(this)
+
+method Bounds() returns Range 
