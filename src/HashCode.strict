@@ -1,0 +1,5 @@
+implement Computation<Number>
+
+has inputs Any[]
+
+method Compute() returns Number

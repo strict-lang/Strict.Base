@@ -1,0 +1,4 @@
+let LowerBound = generic
+
+method Inject(parameters InjectParameters) returns LowerBound
+method Name() returns Name

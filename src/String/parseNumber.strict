@@ -10,4 +10,7 @@ method Compute() returns String
   if number is 0
     return "0"
   generateOutput()
-  return builder.Complete() 
+  return builder.Complete()
+
+method generateOutput()
+  throw Error.WithMessage("unimplemented")
