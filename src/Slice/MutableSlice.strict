@@ -1,6 +1,0 @@
-implement Mutable
-implement Slice<let Element = generic>
-
-method Insert(index Number, element Element)
-
-method CopyWithCapacity(capacity Number) returns MutableSlice<Element>

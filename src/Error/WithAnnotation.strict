@@ -1,7 +1,0 @@
-implement Error
-
-has Cause Error
-has Annotation String
-
-method Report() returns String
-  return String.Format("%s: %s", Cause.Report(), Annotation)

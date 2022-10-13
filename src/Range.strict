@@ -1,15 +1,11 @@
-implement CountedSequence<Number>
-
-has Begin Number
+has Start Number
 has End Number
-
-factory(begin Number, to: end Number)
-  if begin > end
-    return new(end, begin)
-  return new(begin, end)
-
-method Iterate() returns Iteration
-  return rangeIteration(this)
-
-method Count() returns Boolean
-  return End - Begin
+Length
+	Range(0, 5).Length is 5
+	Range(2, 18).Length is 16
+	End - Start
+Sum
+	Range(2, 5).Sum is 2 + 3 + 4
+	Range(42, 45).Sum is 42 + 43 + 44
+	for value
+		+ value

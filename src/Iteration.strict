@@ -1,4 +1,0 @@
-let Element = generic
-
-method Advance() returns Element
-method IsDone() returns Boolean
