@@ -60,3 +60,13 @@ Last Generic
 in Generic
 	in (1, 2) is 1
 	element(0)
+Contains(other Generic) Boolean
+	for elements
+		if value is other
+			return true
+	return false
+Index(other Generic) Number
+	for elements
+		if value is other
+			return index
+	return -1
