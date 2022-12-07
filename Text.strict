@@ -10,4 +10,4 @@ to Number
 	"1.3" to Number is 1.3
 	"1e10" to Number is 1e10
 	for Characters.Reverse
-	+ value to Number * index ^ 10
+		+ value to Number * index ^ 10

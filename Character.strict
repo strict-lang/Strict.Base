@@ -4,7 +4,7 @@ from(number)
 	Character(0) + number
 from(text)
 	"b" to Character is "b"
-	text.Characters[0]
+	text.Characters(0)
 to Text
 	Character("a") to Text is "a"
 	"" + value
