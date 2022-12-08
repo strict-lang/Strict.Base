@@ -13,5 +13,5 @@ to Text
 	"" + value + other
 to Number
 	Character("3") to Number is 3
-	let result = value - Character(0)
+	constant result = value - Character(0)
 	result is in Range(0, 10) ? result else Error("Not a number: " + value)

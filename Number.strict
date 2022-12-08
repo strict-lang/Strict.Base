@@ -6,8 +6,8 @@ to Text
 digits Numbers
 	1.digits is (1)
 	123.digits is (1, 2, 3)
-	let mextPart = (number / 10).Floor
-	let currentDigit = number % 10
+	constant mextPart = (number / 10).Floor
+	constant currentDigit = number % 10
 	nextDigit is 0 ? currentDigit else nextPart.digits + currentDigit
 Floor Number
 	Floor(1) is 1
