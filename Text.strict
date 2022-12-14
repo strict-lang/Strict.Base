@@ -11,3 +11,22 @@ to Number
 	"1e10" to Number is 1e10
 	for Characters.Reverse
 		+ value to Number * index ^ 10
+Contains(text) Boolean
+	TODO
+StartsWith(text) Boolean
+	TODO
+TODO: more
+Count(character) Number
+	"".Count("1") is 0
+	"abc".Count("a") is 1
+	"hello".Count("l") is 2
+	mutable count = 0
+	for value
+		if value is character
+			count.Increment
+	count
+SurroundWithParentheses Text
+	"".SurroundWithParentheses is "()"
+	"Hi".SurroundWithParentheses is "(Hi)"
+	"1, 2, 3".SurroundWithParentheses is "(1, 2, 3)"
+	"(" + value + ")"
