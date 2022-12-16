@@ -1,6 +1,8 @@
-has Number
-Compute Number
-	Compute(5) is 5
+has number
+from(generic)
+	HashCode(5).Compute is 5
+	HashCode("abc").Compute is 3
+	HashCode((1, 2)).Compute is 2
 	if value is Number
 		return value
 	value is Iterator ? value.Length else 0

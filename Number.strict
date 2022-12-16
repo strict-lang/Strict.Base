@@ -6,7 +6,7 @@ to Text
 digits Numbers
 	1.digits is (1)
 	123.digits is (1, 2, 3)
-	constant mextPart = (number / 10).Floor
+	constant nextPart = (number / 10).Floor
 	constant currentDigit = number % 10
 	nextDigit is 0 ? currentDigit else nextPart.digits + currentDigit
 Floor Number
@@ -83,3 +83,10 @@ mutable Decrement(amount Number = 1)
 	Mutable(3).Decrement is 2
 	Mutable(-2).Decrement(-7) is -9
 	value = value - amount
+SomethingCrazy(mutable crazy Number) Number
+	SomethingCrazy(1) is 0 + 1 + 1 + 1
+	SomethingCrazy(2) is 0 + 2 + 2 + 2
+	SomethingCrazy(Increment) is 0 + 1 + 2 + 3
+	SomethingCrazy(Increment) is 3 + 4 + 5 + 6
+	SomethingCrazy(Increment) is 6 + 7 + 8 + 9
+	value + crazy + crazy + crazy

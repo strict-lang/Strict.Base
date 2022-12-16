@@ -8,5 +8,5 @@ Length
 Sum
 	Range(2, 5).Sum is 2 + 3 + 4
 	Range(42, 45).Sum is 42 + 43 + 44
-	for value
+	for
 		+ value

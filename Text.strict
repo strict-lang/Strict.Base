@@ -14,7 +14,7 @@ to Number
 Contains(text) Boolean
 	"hello there".Contains("hi") is false
 	"hello there".Contains("lo") is true
-	for value
+	for
 		if StartsWith(text, index)
 			true
 	false
@@ -22,7 +22,7 @@ StartsWith(text, start = 0) Boolean
 	"hello".StartsWith("hel") is true
 	"hello".StartsWith("hel", 1) is false
 	"yo mama".StartsWith("mama") is false
-	for text
+	for text.Characters
 		if value is not outer(start + index)
 			false
 	true
@@ -31,7 +31,7 @@ Count(character) Number
 	"abc".Count("a") is 1
 	"hello".Count("l") is 2
 	mutable count = 0
-	for value
+	for
 		if value is character
 			count.Increment
 	count
