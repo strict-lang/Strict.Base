@@ -1,6 +1,6 @@
-implement Number
+has Number
 Compute Number
 	Compute(5) is 5
 	if value is Number
 		return value
-	value is Text ? value.Length else 0
+	value is Iterator ? value.Length else 0

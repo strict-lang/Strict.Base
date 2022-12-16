@@ -1,3 +1,4 @@
+has iterator
 has elements Generics
 to Text
 	List(Number) to Text is ""
@@ -48,9 +49,10 @@ is(other) Boolean
 	elements / divider
 *(other) List
 	(1, 2) * (3, 5) is (3, 10)
-	(1) * (1, 2) is List.Error.ListsHaveDifferentDimensions
+	constant listsHaveDifferentDimensions = Error
+	(1) * (1, 2) is listsHaveDifferentDimensions
 	if Length is not other.Length
-		List.Error.ListsHaveDifferentDimensions
+		listsHaveDifferentDimensions
 	elements * other.elements
 *(multiplier Generic) List
 	(1, 2) * 3 is (3, 6)
@@ -59,6 +61,22 @@ Sum Generic
 	(1, 2, 3).Sum is 6
 	for elements
 		+ value
+X Generic
+	(1, 2, 3).X is 1
+	().X is Error
+	elements(0)
+Y Generic
+	(1, 2).Y is 2
+	(1).Y is Error
+	elements(1)
+Z Generic
+	(1, 2, 3).Z is 3
+	(1, 2).Z is Error
+	elements(2)
+W Generic
+	(1, 2, 3, 4).W is 4
+	(1, 2, 3).W is Error
+	elements(3)
 First Generic
 	(1, 2, 3).First is 1
 	elements(0)
@@ -69,12 +87,22 @@ in Generic
 	in (1, 2) is 1
 	element(0)
 Contains(other Generic) Boolean
+	("a", "b", "c").Contains("d") is false
+	("a", "b", "c").Contains("b") is true
 	for elements
 		if value is other
 			return true
 	return false
 Index(other Generic) Number
+	(1, 2, 3).Index(2) is 1
+	(1, 2, 3).Index(9) is -1
 	for elements
 		if value is other
 			return index
 	return -1
+mutable Add(element Generic)
+	(1, 2).Add(3) is (1, 2, 3)
+	value = value + element
+mutable Remove(element Generic)
+	(1, 2, 3).Remove(2) is (1, 3)
+	value = value - element

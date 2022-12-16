@@ -1,4 +1,4 @@
-implement Number
+has number
 from(number)
 	7 to Character is "7"
 	Character(0) + number
@@ -8,10 +8,12 @@ from(text)
 to Text
 	Character("a") to Text is "a"
 	"" + value
-+(other)
++(other) Text
 	Character("1") + Character("2") is "12"
 	"" + value + other
 to Number
 	Character("3") to Number is 3
-	constant result = value - Character(0)
-	result is in Range(0, 10) ? result else Error("Not a number: " + value)
+	mutable notANumber = Error
+  Character("A") to Number is notANumber
+  constant result = value - Character(0)
+  result is in Range(0, 10) ? result else notANumber(value)

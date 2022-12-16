@@ -1,3 +1,4 @@
+has iterator
 has Start Number
 has End Number
 Length

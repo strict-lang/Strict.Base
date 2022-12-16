@@ -1,4 +1,4 @@
-has Name Text
+has Name
 has Package Text
 to Text
 	to Text is "Strict.Base.Type"

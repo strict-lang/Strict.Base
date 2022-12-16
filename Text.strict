@@ -12,10 +12,20 @@ to Number
 	for Characters.Reverse
 		+ value to Number * index ^ 10
 Contains(text) Boolean
-	TODO
-StartsWith(text) Boolean
-	TODO
-TODO: more
+	"hello there".Contains("hi") is false
+	"hello there".Contains("lo") is true
+	for value
+		if StartsWith(text, index)
+			true
+	false
+StartsWith(text, start = 0) Boolean
+	"hello".StartsWith("hel") is true
+	"hello".StartsWith("hel", 1) is false
+	"yo mama".StartsWith("mama") is false
+	for text
+		if value is not outer(start + index)
+			false
+	true
 Count(character) Number
 	"".Count("1") is 0
 	"abc".Count("a") is 1
