@@ -75,18 +75,11 @@ is not(other) Boolean
 <=(other) Boolean
 	0 <= 0 is true
 	value <= other
-mutable Increment(amount Number = 1)
+Increment(amount = 1) Mutable(Number)
 	Mutable(5).Increment.Decrement.Increment is 6
 	Mutable(4).Increment(4) is 8
 	value = value + amount
-mutable Decrement(amount Number = 1)
+Decrement(amount = 1) Mutable(Number)
 	Mutable(3).Decrement is 2
 	Mutable(-2).Decrement(-7) is -9
 	value = value - amount
-SomethingCrazy(mutable crazy Number) Number
-	SomethingCrazy(1) is 0 + 1 + 1 + 1
-	SomethingCrazy(2) is 0 + 2 + 2 + 2
-	SomethingCrazy(Increment) is 0 + 1 + 2 + 3
-	SomethingCrazy(Increment) is 3 + 4 + 5 + 6
-	SomethingCrazy(Increment) is 6 + 7 + 8 + 9
-	value + crazy + crazy + crazy

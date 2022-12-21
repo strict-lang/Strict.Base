@@ -100,9 +100,9 @@ Index(other Generic) Number
 		if value is other
 			return index
 	return -1
-mutable Add(element Generic)
+Add(element Generic) Mutable(List)
 	(1, 2).Add(3) is (1, 2, 3)
 	value = value + element
-mutable Remove(element Generic)
+Remove(element Generic) Mutable(List)
 	(1, 2, 3).Remove(2) is (1, 3)
 	value = value - element

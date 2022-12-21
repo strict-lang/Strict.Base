@@ -17,20 +17,3 @@ to Number
   Character("A") to Number is notANumber
   constant result = value - Character(0)
   result is in Range(0, 10) ? result else notANumber(value)
-
-
-
-Thing.strict
-has character
-..
-
-SuperThing.strict
-has thing
-..
-
-
-has superThing = SuperThing(7)
-
-..
-  superThing to Number is "7" to Number
-	superThing.Floor is "7"
