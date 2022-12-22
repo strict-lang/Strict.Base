@@ -14,6 +14,6 @@ to Text
 to Number
 	Character("3") to Number is 3
 	mutable notANumber = Error
-  Character("A") to Number is notANumber
-  constant result = value - Character(0)
-  result is in Range(0, 10) ? result else notANumber(value)
+	Character("A") to Number is notANumber
+	constant result = value - Character(0)
+	result is in Range(0, 10) ? result else notANumber(value)

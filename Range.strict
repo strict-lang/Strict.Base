@@ -1,6 +1,13 @@
 has iterator
 has Start Number
 has End Number
+for Number
+	Start
+in(element Number) Boolean
+	3 in Range(1, 4) is true
+	5 in Range(1, 4) is false
+	0 in Range(1, 4) is false
+	element >= Start and element <= End
 Length
 	Range(0, 5).Length is 5
 	Range(2, 18).Length is 16
