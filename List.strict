@@ -8,6 +8,8 @@ GetElementsText Text
 	(1, 3).GetElementsText is "1, 3"
 	for elements
 		(index is 0 ? "" else ", ") + value
+for Generic
+	elements(0)
 Length Number
 	(1, 2).Length is 2
 	elements.Length
