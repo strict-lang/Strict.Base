@@ -1,3 +1,4 @@
+has iterator
 to Text
 	5 to Text is "5"
 	10.1 to Text is "10.1"
