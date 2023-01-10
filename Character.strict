@@ -4,6 +4,7 @@ from(number)
 	Character(0) + number
 from(text)
 	Character("b") is "b"
+	Character("ab") is Error
 	text.Characters(0)
 to Text
 	Character("a") to Text is "a"
