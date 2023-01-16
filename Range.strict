@@ -4,9 +4,9 @@ has End Number
 for Number
 	Start
 in(element Number) Boolean
-	3 in Range(1, 4) is true
-	5 in Range(1, 4) is false
-	0 in Range(1, 4) is false
+	3 is in Range(1, 4)
+	5 is not in Range(1, 4)
+	0 is not in Range(1, 4)
 	element >= Start and element <= End
 Length
 	Range(0, 5).Length is 5
