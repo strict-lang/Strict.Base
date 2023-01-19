@@ -1,4 +1,6 @@
 has characters
+has NewLine = Character(13)
+has Tab = Character(7)
 +(other) Text
 	+("more") is "more"
 	"Hey" + " " + "you" is "Hey you"
