@@ -1,7 +1,7 @@
 has iterator
 has elements Generics
 to Text
-	List(Number) to Text is ""
+	Numbers to Text is ""
 	(1, 2) to Text is "(1, 2)"
 	GetElementsText.SurroundWithParentheses
 GetElementsText Text
@@ -39,7 +39,7 @@ is(other) Boolean
 -(removeElement Generic) List
 	(1, 2, 3) - 3 is (1, 2)
 	(1, 2, 3) - 4 is (1, 2, 3)
-	elements - removeElements
+	elements - removeElement
 /(other) List
 	(2, 4, 6) / (2) is (1, 2, 3)
 	(1, 2) / (2, 4) is (0.5, 0.5)

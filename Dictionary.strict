@@ -1,0 +1,34 @@
+has keysAndValues List((key Generic, mappedValue Generic))
+from(key Generic, mappedValue Generic)
+	Dictionary(Number, Number).Length is 0
+	Dictionary(Number, Number) is Dictionary(Number, Number)
+	Dictionary(Number, Number) is not Dictionary(Number, Text)
+	keysAndValues = List((key, mappedValue))
+from(keysAndValues List((key Generic, mappedValue Generic)))
+	Dictionary((1, 1)).Length is 1
+	Dictionary((1, 1), (2, 2)).Length is 2
+	keysAndValues = keysAndValues
+in(key Generic) Boolean
+	2 is in Dictionary((1, 1), (2, 2))
+	3 is not in Dictionary((1, 1), (2, 2)).Contains(3)
+	for keysAndValues
+		if value(0) is key
+			return true
+	false
+get(key Generic) Generic
+	let abbrevation = Dictionary(("A", "Apple"), ("B", "Ball"))
+	abbrevation("A") is "Apple"
+	abbrevation("B") is "Ball"
+	mutable KeyNotFound = Error
+	abbrevation("C") is KeyNotFound
+	for keysAndValues
+		if value(0) is key
+			return value(1)
+	KeyNotFound
+Add(key Generic, mappedValue Generic) Mutable(Dictionary)
+	Dictionary((2, 4)).Add(4, 8) is Dictionary((2, 4), (4, 8))
+	Dictionary((1, 1), (2, 2)).Add(3, 3).Length is 3
+	keysAndValues.Add((key, mappedValue))
+Remove(key Generic) Mutable(Dictionary)
+	Dictionary((1, 1), (2, 2)).Remove(1).Length is 1
+	keysAndValues.Remove((key, mappedValue))
