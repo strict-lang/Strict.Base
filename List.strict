@@ -1,4 +1,4 @@
-has iterator
+has iterator(Generic)
 has elements Generics
 to Text
 	Numbers to Text is ""
@@ -8,8 +8,9 @@ GetElementsText Text
 	(1, 3).GetElementsText is "1, 3"
 	for elements
 		(index is 0 ? "" else ", ") + value
-for Generic
-	elements(0)
+for Iterator(Generic)
+	for (1, 2, 3) is (1, 2, 3)
+	elements
 Length Number
 	(1, 2).Length is 2
 	elements.Length
