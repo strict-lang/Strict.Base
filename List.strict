@@ -1,4 +1,4 @@
-has iterator(Generic)
+has iterator
 has elements Generics
 to Text
 	Numbers to Text is ""
