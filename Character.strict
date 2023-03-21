@@ -1,5 +1,5 @@
 has number
-from(number)
+from
 	Character(7) is "7"
 	Character(0) + number
 from(text)

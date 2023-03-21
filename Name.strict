@@ -1,1 +1,1 @@
-has text with Length is 2
+has text with Length > 1 and contains(" ") is false

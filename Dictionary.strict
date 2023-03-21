@@ -1,13 +1,10 @@
 has keysAndValues List((key Generic, mappedValue Generic))
-from(key Generic, mappedValue Generic)
+from
 	Dictionary(Number, Number).Length is 0
 	Dictionary(Number, Number) is Dictionary(Number, Number)
 	Dictionary(Number, Number) is not Dictionary(Number, Text)
-	keysAndValues = List((key, mappedValue))
-from(keysAndValues List((key Generic, mappedValue Generic)))
 	Dictionary((1, 1)).Length is 1
 	Dictionary((1, 1), (2, 2)).Length is 2
-	keysAndValues = keysAndValues
 in(key Generic) Boolean
 	2 is in Dictionary((1, 1), (2, 2))
 	3 is not in Dictionary((1, 1), (2, 2)).Contains(3)

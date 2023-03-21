@@ -11,8 +11,8 @@ digits Numbers
 	constant currentDigit = number % 10
 	nextDigit is 0 ? currentDigit else nextPart.digits + currentDigit
 Floor Number
-	Floor(1) is 1
-	Floor(2.4) is 2
+	1.Floor is 1
+	2.4.Floor is 2
 	value - value % 1
 is(other) Boolean
 	"Hey" is "Hey" is true
