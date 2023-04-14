@@ -1,4 +1,4 @@
-has keysAndValues List((key Generic, mappedValue Generic))
+has keysAndValues List(key Generic, mappedValue Generic)
 from
 	Dictionary(Number, Number).Length is 0
 	Dictionary(Number, Number) is Dictionary(Number, Number)
