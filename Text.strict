@@ -40,7 +40,7 @@ SurroundWithParentheses Text
 	"Hi".SurroundWithParentheses is "(Hi)"
 	"1, 2, 3".SurroundWithParentheses is "(1, 2, 3)"
 	"(" + value + ")"
-isnot(other) Boolean
+is not(other) Boolean
 	"A" is not "B"
 	"Hi" is not "hi"
 	value is not other
