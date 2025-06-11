@@ -1,6 +1,6 @@
 has characters
-has NewLine = Character(13)
-has Tab = Character(7)
+constant NewLine = Character(13)
+constant Tab = Character(7)
 +(other) Text
 	+("more") is "more"
 	"Hey" + " " + "you" is "Hey you"
