@@ -11,4 +11,6 @@ Some of the types defined in this package are:
 - Log
 - common traits like Any (applies to all types), App, Generic, Mutable
 
-Changes to this package are done very carefully and planned, since they will most likely impact almost every source file in the ecosystem. By default strict code will always try to use the latest version, but if that fails will automatically fall back to the version when the type was last changed (to be in sync with )
+Changes to this package are done very carefully and planned, since they will most likely impact almost every source file in the ecosystem. By default strict code will always try to use the latest version, but if that fails will automatically fall back to the version when the type was last changed (to be in sync)
+
+More at https://strict-lang.org
