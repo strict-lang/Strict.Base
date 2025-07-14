@@ -5,6 +5,10 @@ constant Tab = Character(7)
 	+("more") is "more"
 	"Hey" + " " + "you" is "Hey you"
 	characters + other.characters
++(number) Text
+	+(1) is "1"
+	"Your age is " + 18 is "Your age is 18"
+	characters + number to Text
 to Number
 	"5" to Number is 5
 	"123" to Number is 123
