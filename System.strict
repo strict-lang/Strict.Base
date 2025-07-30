@@ -1,1 +1,3 @@
-WriteLine(generic)
+has textWriter
+Write(text)
+	textWriter.Write(text)
