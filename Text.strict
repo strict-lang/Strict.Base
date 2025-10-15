@@ -1,6 +1,4 @@
 has characters
-constant NewLine = Character(13)
-constant Tab = Character(7)
 +(other) Text
 	+("more") is "more"
 	"Hey" + " " + "you" is "Hey you"
