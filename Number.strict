@@ -3,13 +3,18 @@ to Text
 	5 to Text is "5"
 	10.1 to Text is "10.1"
 	for digits
-		Character(value)
+		value to Character
 digits Numbers
 	1.digits is (1)
 	123.digits is (1, 2, 3)
 	constant nextPart = (number / 10).Floor
 	constant currentDigit = number % 10
 	nextDigit is 0 ? currentDigit else nextPart.digits + currentDigit
+to Character
+	5 to Character is "5"
+	mutable canOnlyConvertSingleDigit = Error
+	10 to Character is canOnlyConvertSingleDigit
+	value is in Range(0, 10) ? Character(Character.zeroCharacter + value) else canOnlyConvertSingleDigit(value)
 Floor Number
 	1.Floor is 1
 	2.4.Floor is 2
