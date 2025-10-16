@@ -13,17 +13,17 @@ in(key Generic) Boolean
 			return true
 	false
 get(key Generic) Generic
-	let abbrevation = Dictionary(("A", "Apple"), ("B", "Ball"))
+	constant abbrevation = Dictionary(("A", "Apple"), ("B", "Ball"))
 	abbrevation("A") is "Apple"
 	abbrevation("B") is "Ball"
-	mutable KeyNotFound = Error
+	constant KeyNotFound = Error
 	abbrevation("C") is KeyNotFound
 	for keysAndValues
 		if value(0) is key
 			return value(1)
 	KeyNotFound
 Add(key Generic, mappedValue Generic) Mutable(Dictionary)
-	mutable DuplicateKey = Error
+	constant DuplicateKey = Error
 	Dictionary((1, 1)).Add(1, 1) is DuplicateKey
 	Dictionary((1, 1)).Add(1, 2) is DuplicateKey
 	Dictionary((2, 4)).Add(4, 8) is Dictionary((2, 4), (4, 8))

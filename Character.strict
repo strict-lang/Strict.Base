@@ -16,7 +16,7 @@ to Text
 	"" + value + other
 to Number
 	Character("3") to Number is 3
-	mutable notANumber = Error
+	constant notANumber = Error
 	Character("A") to Number is notANumber
-	constant result = value - zeroCharacter
+	let result = value - zeroCharacter
 	result is in Range(0, 10) ? result else notANumber(value)

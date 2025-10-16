@@ -4,11 +4,6 @@ GetName(type) Text
 GetName(member) Text
 	member.Name
 CompareTo(member) Number
-	if value > member.Value
-		return 1
-	else if value < member.Value
-		return -1
-	else
-		return 0
+	value > member.Value ? 1 else value < member.Value ? -1 else 0
 Equals(member) Boolean
 	value is member.Value

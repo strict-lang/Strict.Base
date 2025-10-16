@@ -7,12 +7,12 @@ to Text
 digits Numbers
 	1.digits is (1)
 	123.digits is (1, 2, 3)
-	constant nextPart = (number / 10).Floor
-	constant currentDigit = number % 10
-	nextDigit is 0 ? currentDigit else nextPart.digits + currentDigit
+	let nextPart = (value / 10).Floor
+	let currentDigit = value % 10
+	nextPart is 0 ? currentDigit else nextPart.digits + currentDigit
 to Character
 	5 to Character is "5"
-	mutable canOnlyConvertSingleDigit = Error
+	constant canOnlyConvertSingleDigit = Error
 	10 to Character is canOnlyConvertSingleDigit
 	value is in Range(0, 10) ? Character(Character.zeroCharacter + value) else canOnlyConvertSingleDigit(value)
 Floor Number
