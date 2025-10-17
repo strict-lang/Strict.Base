@@ -13,10 +13,10 @@ to Text
 	"" + value
 +(other) Text
 	Character("1") + Character("2") is "12"
-	"" + value + other
+	value to Text + other
 to Number
 	Character("3") to Number is 3
 	constant notANumber = Error
 	Character("A") to Number is notANumber
-	let result = value - zeroCharacter
+	let result = number - zeroCharacter
 	result is in Range(0, 10) ? result else notANumber(value)
