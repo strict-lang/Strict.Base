@@ -19,10 +19,6 @@ Floor Number
 	1.Floor is 1
 	2.4.Floor is 2
 	value - value % 1
-is(other) Boolean
-	"Hey" is "Hey" is true
-	"Hi" is "Hey" is false
-	value is other
 - Number
 	-1 is not 1
 	-value
