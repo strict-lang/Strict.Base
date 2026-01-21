@@ -86,7 +86,7 @@ First Generic
 Last Generic
 	(1, 2, 3).Last is 3
 	elements(-1)
-in(other) Boolean
+in(other Generic) Boolean
 	3 is in (1, 2, 3)
 	3 is not in (1, 2)
 	5 is not in (1, 8)

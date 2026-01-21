@@ -4,11 +4,11 @@ has ExclusiveEnd Number
 for Iterator(Number)
 	for Range(0, 5) is (0, 1, 2, 3, 4)
 	value
-in(element Number) Boolean
+in(number) Boolean
 	3 is in Range(1, 4)
 	5 is not in Range(1, 4)
 	0 is not in Range(1, 4)
-	element >= Start and element < ExclusiveEnd
+	number >= Start and number < ExclusiveEnd
 Length
 	Range(0, 5).Length is 5
 	Range(2, 18).Length is 16

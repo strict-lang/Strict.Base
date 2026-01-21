@@ -7,7 +7,7 @@ from
 	Dictionary((1, 1), (2, 2)).Length is 2
 in(key Generic) Boolean
 	2 is in Dictionary((1, 1), (2, 2))
-	3 is not in Dictionary((1, 1), (2, 2)).Contains(3)
+	3 is not in Dictionary((1, 1), (2, 2))
 	for keysAndValues
 		if value(0) is key
 			return true

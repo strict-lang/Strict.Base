@@ -15,9 +15,9 @@ to Number
 	"1e10" to Number is 1e10
 	for characters.Reverse
 		+ value to Number * index ^ 10
-Contains(text) Boolean
-	"hello there".Contains("hi") is false
-	"hello there".Contains("lo") is true
+in(text) Boolean
+	"hi" is not in "hello there"
+	"lo" is in "hello there"
 	for
 		if StartsWith(text, index)
 			return true
