@@ -39,7 +39,7 @@ is(other) Boolean
 	1 is 1
 	2 is not 3
 	value is other
-is not(other) Boolean
+not(other) Boolean
 	1 is not 3
 	2 is not 3
 	value is not other
