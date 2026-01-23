@@ -39,10 +39,6 @@ is(other) Boolean
 	1 is 1
 	2 is not 3
 	value is other
-not(other) Boolean
-	1 is not 3
-	2 is not 3
-	value is not other
 +(other) Number
 	3 + 4 is 7
 	value + other
@@ -65,17 +61,17 @@ not(other) Boolean
 	value ^ other
 >(other) Boolean
 	0 > 0 is false
-	3 > 1 is true
+	3 > 1
 	value > other
 >=(other) Boolean
-	0 >= 0 is true
+	0 >= 0
 	value >= other
 <(other) Boolean
 	0 < 0 is false
-	1 < 3 is true
+	1 < 3
 	value < other
 <=(other) Boolean
-	0 <= 0 is true
+	0 <= 0
 	value <= other
 Increment(amount = 1) Mutable(Number)
 	Mutable(5).Increment.Decrement.Increment is 6

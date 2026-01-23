@@ -3,4 +3,3 @@ to Type
 to Text
 to HashCode
 is(other) Boolean
-not(other) Boolean

@@ -9,9 +9,7 @@ in(key Generic) Boolean
 	2 is in Dictionary((1, 1), (2, 2))
 	3 is not in Dictionary((1, 1), (2, 2))
 	for keysAndValues
-		if value(0) is key
-			return true
-	false
+		value.Key is key
 get(key Generic) Generic
 	constant abbrevation = Dictionary(("A", "Apple"), ("B", "Ball"))
 	abbrevation("A") is "Apple"
@@ -19,8 +17,8 @@ get(key Generic) Generic
 	constant KeyNotFound = Error
 	abbrevation("C") is KeyNotFound
 	for keysAndValues
-		if value(0) is key
-			return value(1)
+		if value.Key is key
+			return value.Value
 	KeyNotFound
 Add(key Generic, mappedValue Generic) Mutable(Dictionary)
 	constant DuplicateKey = Error
@@ -31,4 +29,4 @@ Add(key Generic, mappedValue Generic) Mutable(Dictionary)
 	in(key) ? DuplicateKey : keysAndValues.Add((key, mappedValue))
 Remove(key Generic) Mutable(Dictionary)
 	Dictionary((1, 1), (2, 2)).Remove(1).Length is 1
-	keysAndValues.Remove((key, Get(key)))
+	keysAndValues.Remove((key, get(key)))

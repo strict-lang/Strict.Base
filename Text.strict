@@ -14,35 +14,31 @@ to Number
 	"1.3" to Number is 1.3
 	"1e10" to Number is 1e10
 	for characters.Reverse
-		+ value to Number * index ^ 10
+		value to Number * index ^ 10
 in(text) Boolean
 	"hi" is not in "hello there"
 	"lo" is in "hello there"
 	for
-		if StartsWith(text, index)
-			return true
-	false
+		StartsWith(text, index)
 StartsWith(text, start = 0) Boolean
-	"hello".StartsWith("hel") is true
+	"hello".StartsWith("hel")
 	"hello".StartsWith("hel", 1) is false
 	"yo mama".StartsWith("mama") is false
 	for text.characters
-		if value is not outer(start + index)
-			return false
-	true
+		value is not outer(start + index)
 Count(character) Number
 	"".Count("1") is 0
 	"abc".Count("a") is 1
 	"hello".Count("l") is 2
 	for
 		if value is character
-			+ 1
+			1
 SurroundWithParentheses Text
 	"".SurroundWithParentheses is "()"
 	"Hi".SurroundWithParentheses is "(Hi)"
 	"1, 2, 3".SurroundWithParentheses is "(1, 2, 3)"
 	"(" + value + ")"
-not(other) Boolean
-	"A" is not "B"
+is(other) Boolean
+	"A" is "A"
 	"Hi" is not "hi"
-	value is not other
+	value is other
