@@ -20,6 +20,6 @@ Changes to this package are done very carefully and planned, since they will mos
 More at https://strict-lang.org
 
 # How to use
-The best way to learn how any expression or base type works is to look at the code, it is very compact and every single method starts with tests on how to use it. This base library is not just defining how the language works, but the documentation in source code form. All tests use the is comparsion (similar to == in c style languages, = is used for assignments), "is true" at the end of any expression is never used.
+The best way to learn how any expression or base type works is to look at the code, it is very compact and every single method starts with tests on how to use it. This base library is not just defining how the language works, but the documentation in source code form. All tests use the is comparsion (similar to == in c style languages, = is used for assignments), "is true" at the end of any expression is never used. All expressions (not just tests) must evaluate to true, otherwise the execution stops with an error. If an expression is constant (like all tests, but also many other expressions), it will be removed and optimized out after the first run.
 
 See the Readme.md of the Strict project for more details, how to use and example code.
