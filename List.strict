@@ -127,3 +127,8 @@ Count(searchFor Generic) Number
 	for elements
 		if value is searchFor
 			1
+Reverse List
+	(1, 2, 3).Reverse is (3, 2, 1)
+	(5, 10, 5).Reverse is (5, 10, 5)
+	for Range(0, value.Length).Reverse
+		outer.value(index)
