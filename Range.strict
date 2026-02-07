@@ -8,11 +8,11 @@ in(number) Boolean
 	5 is not in Range(1, 4)
 	0 is not in Range(1, 4)
 	number >= Start and number < ExclusiveEnd
-Length
+Length Number
 	Range(0, 5).Length is 5
 	Range(2, 18).Length is 16
 	ExclusiveEnd - Start
-Sum
+Sum Number
 	Range(2, 5).Sum is 2 + 3 + 4
 	Range(42, 45).Sum is 42 + 43 + 44
 	for
