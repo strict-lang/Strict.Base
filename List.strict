@@ -30,26 +30,14 @@ is(other) Boolean
 	3 + (4) is (3, 4)
 	(1) + ("Hi") is Error("Cannot downcast Texts to fit to Numbers")
 	elements + other.elements
-+(addElement Generic) List
-	(1, 2, 3) + 4 is (1, 2, 3, 4)
-	("Hello", "World") + 5 is ("Hello", "World", "5")
-	elements + addElement
 -(other) List
 	(1, 2, 3) - (3) is (1, 2)
 	elements - other.elements
--(removeElement Generic) List
-	(1, 2, 3) - 3 is (1, 2)
-	(1, 2, 3) - 4 is (1, 2, 3)
-	elements - removeElement
 /(other) List
 	(2, 4, 6) / (2) is (1, 2, 3)
 	(1, 2) / (2, 4) is (0.5, 0.5)
 	(1) / (20, 10) is (0.05, 0.1)
 	elements / other.elements
-/(divider Generic) List
-	(2, 4, 6) / 2 is (1, 2, 3)
-	(20, 10) / 1 is (0.05, 0.1)
-	elements / divider
 *(other) List
 	(1, 2) * (3, 5) is (3, 10)
 	constant listsHaveDifferentDimensions = Error
@@ -57,9 +45,21 @@ is(other) Boolean
 	if Length is not other.Length
 		listsHaveDifferentDimensions
 	elements * other.elements
-*(multiplier Generic) List
++(generic) List
+	(1, 2, 3) + 4 is (1, 2, 3, 4)
+	("Hello", "World") + 5 is ("Hello", "World", "5")
+	elements + generic
+-(generic) List
+	(1, 2, 3) - 3 is (1, 2)
+	(1, 2, 3) - 4 is (1, 2, 3)
+	elements - generic
+*(generic) List
 	(1, 2) * 3 is (3, 6)
-	elements * multiplier
+	elements * generic
+/(generic) List
+	(2, 4, 6) / 2 is (1, 2, 3)
+	(20, 10) / 1 is (0.05, 0.1)
+	elements / generic
 Sum Generic
 	(1, 2, 3).Sum is 6
 	for elements
