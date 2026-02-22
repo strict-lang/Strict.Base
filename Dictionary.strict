@@ -26,7 +26,7 @@ Add(key Generic, mappedValue Generic) Mutable(Dictionary)
 	Dictionary((1, 1)).Add(1, 2) is DuplicateKey
 	Dictionary((2, 4)).Add(4, 8) is Dictionary((2, 4), (4, 8))
 	Dictionary((1, 1), (2, 2)).Add(3, 3).Length is 3
-	in(key) ? DuplicateKey : keysAndValues.Add((key, mappedValue))
+	in(key) then DuplicateKey : keysAndValues.Add((key, mappedValue))
 Remove(key Generic) Mutable(Dictionary)
 	Dictionary((1, 1), (2, 2)).Remove(1).Length is 1
 	keysAndValues.Remove((key, get(key)))

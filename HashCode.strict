@@ -5,4 +5,4 @@ from(generic)
 	HashCode((1, 2)).Compute is 2
 	if value is Number
 		return value
-	value is Iterator ? value.Length else 0
+	value is Iterator then value.Length else 0

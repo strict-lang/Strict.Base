@@ -9,12 +9,12 @@ digits Numbers
 	123.digits is (1, 2, 3)
 	let nextPart = (value / 10).Floor
 	let currentDigit = value % 10
-	nextPart is 0 ? currentDigit else nextPart.digits + currentDigit
+	nextPart is 0 then currentDigit else nextPart.digits + currentDigit
 to Character
 	5 to Character is "5"
 	constant canOnlyConvertSingleDigit = Error
 	10 to Character is canOnlyConvertSingleDigit
-	value is in Range(0, 10) ? Character(Character.zeroCharacter + value) else canOnlyConvertSingleDigit(value)
+	value is in Range(0, 10) then Character(Character.zeroCharacter + value) else canOnlyConvertSingleDigit(value)
 Floor Number
 	1.Floor is 1
 	2.4.Floor is 2

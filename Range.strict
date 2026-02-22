@@ -22,4 +22,4 @@ Reverse Range
 	Range(1, 4).Reverse is Range(3, 0)
 	Range(10, 5).Reverse is Range(6, 11)
 	Range(-5, -10).Reverse is Range(-9, -4)
-	Length > 0 ? Range(ExclusiveEnd - 1 , Start - 1)	else Range(ExclusiveEnd + 1, Start + 1)
+	Length > 0 then Range(ExclusiveEnd - 1 , Start - 1)	else Range(ExclusiveEnd + 1, Start + 1)
